@@ -9,13 +9,16 @@
     <title>Projeto 06</title>
 </head>
 <body>
-    <div class="icons-social">
-        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-    </div><!--icons-social-->
+    
     <section class="main">
+    <div class="layer"></div><!--layer-->
         <div class="center">
             <header>
+            <div class="icons-social">
+                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+            </div><!--icons-social-->
+            <div class="clear"></div><!--clear-->
                 <div class="logo">
                     Danki.Code
                 </div><!--logo-->
@@ -26,6 +29,7 @@
                         <li><a href="">Contato</a></li>
                     </ul>
                 </nav>
+                <div class="clear"></div><!--clear-->
             </header>
         </div><!--center-->
     </section><!--main-->
