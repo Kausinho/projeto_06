@@ -71,6 +71,44 @@ section.main header{
     color: white;
 }
 
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile ul{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 93px;
+    background: white;
+    width: 100%;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+nav.mobile li{
+    font-weight: lighter;
+    border-bottom: 1px solid #444;
+    text-align: center;
+    padding: 8px 0;
+}
+
+nav.mobile > i{
+    position: relative;
+    top: 23px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+nav.mobile a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+
 nav.desktop{
     margin-top: 20px;
     float: right;
@@ -94,7 +132,7 @@ nav.desktop a{
 
 .conteudo-header{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 700px;
     margin: 110px 0;
 }
@@ -362,9 +400,30 @@ section.final-section h2:hover > .borda-efeito{
 
 /****/
 
+/**Footer (Roda pé)**/
+
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    text-align: center;
+    color: white;
+    background: #444;
+}
+
+/****/
+
 /**Media Screen**/
 
 @media screen and (max-width: 768px){
+
+    nav.mobile{
+        display: block;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
     .w50{
         width: 100%;
     }
