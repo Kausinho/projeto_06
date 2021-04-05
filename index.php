@@ -29,6 +29,14 @@
                         <li><a href="">Contato</a></li>
                     </ul>
                 </nav>
+                <nav class="mobile">
+                    <i class="fa fa-bars"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul> 
+                </nav>
                 <div class="clear"></div><!--clear-->
             </header>
             <div class="conteudo-header">
@@ -172,5 +180,24 @@
             <div class="clear"></div><!--clear-->
         </div><!--center-->
     </section><!--final-section-->
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('nav.mobile i').click(function(){
+                var el = $(this).parent().find('ul');
+
+                if(el.is(':visible') == false){
+                    el.fadeIn();
+                }else{
+                    el.fadeOut();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
